@@ -1,0 +1,88 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-Grey: hsl(0, 0%, 12%);
+    --off-Black: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%);
+}
+
+html {
+    font-family: "Inter";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    flex-direction: column;
+}
+
+.container {
+    background-color: var(--dark-Grey);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--green);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: 2px solid var(--grey);
+    border-radius: 8px;
+    background-color: var(--grey);
+    padding: 10px 100px;
+    color: var(--white);
+    margin: 7px 0;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--off-Black);
+}
+
+.attribution {
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: var(--white)
+}
+
+@media screen and (max-width: 375px) {
+    button {
+        padding: 10px 80px;
+    }
+}
